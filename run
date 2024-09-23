@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative "lib/runner"
+
+year = ARGV[0].to_i
+day = ARGV[1].to_i
+part = ARGV[2].to_i
+
+runner = Runner.new(year, day, part)
+runner.solve
