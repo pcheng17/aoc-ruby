@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative "lib/starter"
+
+year = ARGV[0].to_i
+day = ARGV[1].to_i
+
+starter = Starter.new(year, day)
+starter.execute

@@ -7,7 +7,7 @@ class Runner
     @part = part
   end
 
-  def solve
+  def execute
     day_str = @day.to_s.rjust(2, '0')  # Format the day as '01', '02', etc.
     input_file = File.expand_path("../#{@year}/inputs/#{day_str}.txt", __dir__)
     solution_file = File.expand_path("../#{@year}/#{day_str}.rb", __dir__)
