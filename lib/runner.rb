@@ -28,7 +28,7 @@ class Runner
 
     parts.each do |p|
       time = Benchmark.measure { answer = send("part#{p}", @input) }
-      answer = send("part#{p}", @input)
+      answer = send("part#{p}", @input) || "nil"
       puts "🎄 Part #{p}: #{answer} :: #{(time.real * 1000).round(4)} ms"
     end
   end
